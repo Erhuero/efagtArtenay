@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFAGT", "EFAGT\EFAGT.csproj", "{DDF5253E-22E7-4CC0-9E4F-0056B8D17FF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDF5253E-22E7-4CC0-9E4F-0056B8D17FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF5253E-22E7-4CC0-9E4F-0056B8D17FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF5253E-22E7-4CC0-9E4F-0056B8D17FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF5253E-22E7-4CC0-9E4F-0056B8D17FF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB61CD9F-53B1-402A-8ED5-44AD5524D36A}
+	EndGlobalSection
+EndGlobal
