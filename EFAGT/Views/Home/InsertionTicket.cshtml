@@ -1,10 +1,6 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "InsertionTicket";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<p>Use this area to provide additional information.</p>
 
 
 @using EFAGT;
@@ -22,8 +18,7 @@
             @Html.EditorFor(model => model.visualisationTickets.FirstOrDefault().idTicket, new { htmlAttributes = new { @type = "hidden", @class = "form-control", @Value = "1" } })
         </div>
     </div>
-
-
+    
     <div class="row form-group">
         <div class="col-md-12">
             <button type="submit" class="btn btn-primary">Valider</button>

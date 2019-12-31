@@ -1,17 +1,41 @@
-﻿using System;
+﻿using EFAGT.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+//using EFAGT.Models;
 namespace EFAGT.Controllers
 {
     public class HomeController : Controller
     {
+        DAL dataLayer = new DAL();
+
         public ActionResult Index()
         {
-            return View();
+            ViewModele modele = new ViewModele();
+
+            modele.visualisationTickets = dataLayer.requeteAffiche();
+
+            return View(modele);
         }
+
+        public ActionResult insertionTickets()
+        {
+            return PartialView();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
         public ActionResult About()
         {
