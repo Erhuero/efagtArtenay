@@ -7,7 +7,6 @@
 <p>Use this area to provide additional information.</p>
 
 
-
 @using EFAGT;
 
 @model  EFAGT.Models.ViewModele
@@ -23,11 +22,7 @@
             @Html.EditorFor(model => model.visualisationTickets.FirstOrDefault().idTicket, new { htmlAttributes = new { @type = "hidden", @class = "form-control", @Value = "1" } })
         </div>
     </div>
-    <div class="row form-group">
-        <div class="col-md-6">
-            @Html.LabelFor(model => model.visualisationTickets.FirstOrDefault().emplacementMaterielTicket, htmlAttributes: new { @class = "control-label col-md-6" })
-        </div>
-    </div>
+
 
     <div class="row form-group">
         <div class="col-md-12">
