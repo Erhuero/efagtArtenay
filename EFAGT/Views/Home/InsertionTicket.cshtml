@@ -13,16 +13,22 @@
 {
     @Html.AntiForgeryToken()
 
+<div class="row form-group">
+    <div class="col-md-6">
+        @Html.EditorFor(model => model.visualisationTickets.FirstOrDefault().idTicket, new { htmlAttributes = new { @type = "hidden", @class = "form-control", @Value = "1" } })
+    </div>
+ </div>
     <div class="row form-group">
         <div class="col-md-6">
-            @Html.EditorFor(model => model.visualisationTickets.FirstOrDefault().idTicket, new { htmlAttributes = new { @type = "hidden", @class = "form-control", @Value = "1" } })
+            @Html.LabelFor(model => model.visualisationTickets.FirstOrDefault().emplacementMaterielTicket, htmlAttributes: new { @class = "control-label col-md-6" })
+            @Html.EditorFor(model => model.visualisationTickets.FirstOrDefault().emplacementMaterielTicket, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
         </div>
     </div>
-    
+
     <div class="row form-group">
         <div class="col-md-12">
             <button type="submit" class="btn btn-primary">Valider</button>
         </div>
     </div>
 
-}
+    }
